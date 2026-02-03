@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>MViewer</title>
+    {% endif %}
+
+    <!-- Stylesheet.  Currently, we're using milligram, but that's not set in stone -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/milligram.css') }}" />
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>

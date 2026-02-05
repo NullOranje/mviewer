@@ -3,17 +3,17 @@
 {% block content %}
     <aside class="sidebar">
         <nav class="card-list">
-            <a href="#healthy" class="card state-ok">
+            <a href="#healthy" class="card state-accepted">
                 <h5>Cluster Healthy</h5>
                 <p>All systems nominal</p>
             </a>
 
-            <a href="#degraded" class="card state-warn">
+            <a href="#degraded" class="card state-unknown">
                 <h5>Edge Nodes</h5>
                 <p>Latency elevated</p>
             </a>
 
-            <a href="#failed" class="card state-error">
+            <a href="#failed" class="card state-rejected">
                 <h5>Ingress</h5>
                 <p>Traffic blocked</p>
             </a>
@@ -32,7 +32,7 @@
 
         <main>
             <h3>Main Pane</h3>
-            <p>This content scrolls independently of the sidebar.</p>
+            <p>Select message on the side to view</p>
         </main>
     </div>
     {#        <aside class="sidebar">#}

@@ -1,0 +1,7 @@
+<nav class="card-list">
+    <aside class="sidebar">
+        {% for track in tracks %}
+        {live_component(component, track.track_id, track=track)}
+        {% endfor %}
+    </aside>
+</nav>

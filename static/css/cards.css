@@ -24,32 +24,32 @@
 /* --- STATE COLORS --- */
 
 /* Green — OK */
-.state-ok {
+.state-accepted {
     border-color: #3c9a5f;
     background: #f3fbf6;
 }
 
-.state-ok::before {
+.state-accepted::before {
     background: #3c9a5f;
 }
 
 /* Yellow — Warning */
-.state-warn {
+.state-unknown {
     border-color: #d1a600;
     background: #fffbea;
 }
 
-.state-warn::before {
+.state-unknown::before {
     background: #d1a600;
 }
 
 /* Red — Error */
-.state-error {
+.state-rejected {
     border-color: #d64545;
     background: #fff2f2;
 }
 
-.state-error::before {
+.state-rejected::before {
     background: #d64545;
 }
 

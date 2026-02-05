@@ -1,15 +1,81 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div>
-    <h1>Static Sample</h1>
-    </div>
+    <aside class="sidebar">
+        <nav class="card-list">
+            <a href="#healthy" class="card state-ok">
+                <h5>Cluster Healthy</h5>
+                <p>All systems nominal</p>
+            </a>
 
-    <blockquote>
-    <p>
-        <em>Static Sample</em>
-        Will if float?
-    </p>
-    </blockquote>
+            <a href="#degraded" class="card state-warn">
+                <h5>Edge Nodes</h5>
+                <p>Latency elevated</p>
+            </a>
+
+            <a href="#failed" class="card state-error">
+                <h5>Ingress</h5>
+                <p>Traffic blocked</p>
+            </a>
+
+            <div class="card state-new">
+                <h5>Backups</h5>
+                <p>Not configured</p>
+            </div>
+        </nav>
+    </aside>
+
+    <div class="app">
+        <header>
+            <h4>Header Bar</h4>
+        </header>
+
+        <main>
+            <h3>Main Pane</h3>
+            <p>This content scrolls independently of the sidebar.</p>
+        </main>
+    </div>
+    {#        <aside class="sidebar">#}
+    {#    <nav class="card-list">#}
+    {#        <a href="#healthy" class="card state-ok">#}
+    {#            <h5>Cluster Healthy</h5>#}
+    {#            <p>All systems nominal</p>#}
+    {#        </a>#}
+    {##}
+    {#        <a href="#degraded" class="card state-warn">#}
+    {#            <h5>Edge Nodes</h5>#}
+    {#            <p>Latency elevated</p>#}
+    {#        </a>#}
+    {##}
+    {#        <a href="#failed" class="card state-error">#}
+    {#            <h5>Ingress</h5>#}
+    {#            <p>Traffic blocked</p>#}
+    {#        </a>#}
+    {##}
+    {#        <div class="card state-new">#}
+    {#            <h5>Backups</h5>#}
+    {#            <p>Not configured</p>#}
+    {#        </div>#}
+    {#    </nav>#}
+    {#        </aside>#}
+    {##}
+    {#    <div class="layout">#}
+    {#        <header>#}
+    {#            <div>#}
+    {#                <h1>Static Sample</h1>#}
+    {#            </div>#}
+    {#        </header>#}
+    {##}
+    {#        <main>#}
+    {#            <blockquote>#}
+    {#                <p>#}
+    {#                    <em>Static Sample</em>#}
+    {#                    Will if float?#}
+    {#                </p>#}
+    {#            </blockquote>#}
+    {##}
+    {#        </main>#}
+    {##}
+    {#    </div>#}
 
 {% endblock %}

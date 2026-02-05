@@ -6,4 +6,5 @@ requires-python = ">=3.14"
 dependencies = [
     "flask>=3.1.2",
     "flask-saml2>=0.3.0",
+    "pyview-web>=0.8.3",
 ]
